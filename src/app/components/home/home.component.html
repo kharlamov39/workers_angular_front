@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="container_button">
+    <span> Add new group </span>
+    <button class="button_add" (click)="modalService.open()"> +</button>
+  </div>
+  <div class="container_group">
+    <group-icon *ngFor="let group of groups" [group]="group" ></group-icon>
+  </div>
+</div>
+
+<app-modal *ngIf="modalService.isVisible$ | async">
+  <div class="form">
+    <div class="form_title"> New Group</div>
+    <input type="text" [(ngModel)]="title">
+    <button class="button_add_group" (click)="createNewGroup()"> Create</button>
+  </div>
+</app-modal>
+  

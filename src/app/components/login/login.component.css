@@ -1,0 +1,58 @@
+.form {
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 100px auto;
+}
+
+.input {
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.171);
+    width: 100%;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+.form_item {
+    margin-bottom: 15px;
+}
+
+.button {
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    background-color: blue;
+    color: rgb(167, 167, 167);
+    font-size: inherit;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: color ease 0.1s 0.1s;
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:active {
+    background-color: black;
+}
+
+.error {
+    font-size: 14px;
+    color: red;
+}
+
+.form_footer {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.toggleForm {
+    color: blue;
+}

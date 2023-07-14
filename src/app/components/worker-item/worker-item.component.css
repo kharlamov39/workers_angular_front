@@ -1,0 +1,56 @@
+.row {
+    display: flex;
+    align-items: center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    width: 150px;
+    border: 1px solid rgba(173, 173, 173, 0.212);
+    word-wrap: break-word;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.block_salary {
+    width: 100px;
+    border: 1px solid black;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 500;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    background-color: inherit;
+    /* text-decoration: underline; */
+}
+
+.block_button {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.edit_button {
+    margin-right: 10px;
+}
+
+.block_edit {
+    background-color: rgb(83, 83, 83);
+}
+
+

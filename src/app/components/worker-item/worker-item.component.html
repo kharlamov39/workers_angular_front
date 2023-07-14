@@ -1,0 +1,35 @@
+    <!-- Информация о работнике -->
+    <div *ngIf="worker" >
+        <div *ngIf="!editMode" class="row">
+            <div class="block"> {{ worker.firstName }} </div>
+            <div class="block"> {{ worker.lastName }} </div>
+            <div class="block"> {{ worker.email }} </div>
+            <div class="block"> {{ worker.salary }} </div>
+            <div class="edit_button">
+                <img src="../../../assets/edit.png" alt="edit" (click)="editMode=true">
+            </div>
+            <div>
+                <img src="../../../assets/remove.png" alt="remove" (click)="deleteWorker(worker._id)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Режим редактирования -->
+    <div *ngIf="editMode" class="row">
+        <div class="block block_edit">
+            <input type="text" class="input" [(ngModel)]="worker.firstName">
+        </div>
+        <div class="block block_edit">
+            <input type="text" class="input" [(ngModel)]="worker.lastName">
+        </div>
+        <div class="block block_edit">
+            <input type="text" class="input" [(ngModel)]="worker.email">
+        </div>
+        <div class="block block_edit">
+            <input type="text" class="input" [(ngModel)]="worker.salary">
+        </div>
+        <div>
+            <img src="../../../assets/save.png" alt="save" (click)="editWorker(worker)">
+        </div>
+    </div>
+

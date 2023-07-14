@@ -1,0 +1,25 @@
+<a class="navigate" routerLink="">Back</a>
+
+<div class="title">
+    <span>Add new worker </span> 
+    <button class="button_add" (click)="modalService.open()" > + </button>
+    <!-- Модалка для добавления работника -->
+    <app-modal *ngIf="modalService.isVisible$ | async">
+        <app-form (onCreateNewWorker)="onCreateNewWorker($event)"></app-form>      
+    </app-modal>
+    <!--  -->
+</div>
+
+<!-- Таблица сотрудников -->
+    <div class="table_head">
+      <div class="table_block"> Firstname  </div>
+      <div class="table_block"> Lastname  </div>
+      <div class="table_block"> Email  </div>
+      <div class="table_block"> Salary</div>
+    </div>  
+    
+    <div *ngIf="workers.length">
+        <worker-item *ngFor="let worker of workers" [worker]="worker" (onDeleteWorker)="onDeleteWorker($event)" (onEditWorker)="onEditWorker($event)"></worker-item>
+    </div>
+<!--  -->
+

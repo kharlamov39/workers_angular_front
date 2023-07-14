@@ -1,0 +1,41 @@
+<form [formGroup]="loginForm" (ngSubmit)="submitLoginForm()" class="form" *ngIf="isLogin">
+    <div class="form_item">
+        <input type="email" class="input" placeholder="Email" formControlName="email" ><br>
+        <div *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].touched" class="error">Invalid email</div>
+    </div>
+    <div class="form_item">
+        <input type="password" class="input" placeholder="Password" formControlName="password"><br>
+        <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched" class="error">Min length 5</div>
+    </div>
+    <button class="button" [disabled]="loginForm.invalid">LOGIN</button>
+    <div class="form_footer">
+        No account? <span class="toggleForm" (click)="isLogin=false"> REGISTER </span>
+    </div>
+</form>
+
+<form [formGroup]="registerForm" (ngSubmit)="submitRegisterForm()" class="form" *ngIf="!isLogin" >
+    <div class="form_item">
+        <input type="text" class="input" placeholder="Fullname" formControlName="fullName" >
+        <div *ngIf="registerForm.controls['fullName'].invalid && registerForm.controls['fullName'].touched" class="error">Fullname required</div>
+    </div>
+    <div class="form_item">
+        <input type="email" class="input" placeholder="Email" formControlName="email" ><br>
+        <div *ngIf="registerForm.controls['email'].invalid && registerForm.controls['email'].touched" class="error">Invalid email</div>
+    </div>
+    <div class="form_item">
+        <input type="password" class="input" placeholder="Password" formControlName="password"><br>
+        <div *ngIf="registerForm.controls['password'].invalid && registerForm.controls['password'].touched" class="error">Min length 5</div>
+    </div>
+    <div class="form_item">
+        <input type="text" class="input" placeholder="Company" formControlName="company"><br>
+        <div *ngIf="registerForm.controls['company'].invalid && registerForm.controls['company'].touched" class="error">Company required</div>
+    </div>
+    <button class="button" [disabled]="registerForm.invalid">REGISTER</button>
+    <div class="form_footer">
+        Is account? <span class="toggleForm" (click)="isLogin=true"> LOGIN </span>
+    </div>
+</form>
+
+
+
+

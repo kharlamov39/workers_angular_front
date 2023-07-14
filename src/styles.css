@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+a {
+    color: inherit;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+input {
+    padding: 10px 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 10px;
+    background-color: rgba(105, 105, 105, 0.137);
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: black;
+    font-size: 14px;
+}
+
+

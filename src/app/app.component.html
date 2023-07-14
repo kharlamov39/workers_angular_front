@@ -1,0 +1,12 @@
+<div class="container">
+  <header class="header">
+    <a class="link" routerLink="">Home</a>
+    <a class="link" routerLink="/login">Login</a> 
+    <span (click)="logout()" class="header_logout"> {{ currentUser?.email }} </span>
+  </header>
+  <div class="body">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

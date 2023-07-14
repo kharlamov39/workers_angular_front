@@ -1,0 +1,68 @@
+.container {
+    margin: 0 auto;
+}
+
+.container_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.button_add {
+    background-color: rgb(19, 139, 3);
+    color: rgba(202, 202, 202, 0.63);
+    padding: 7px 13px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button_add:hover {
+    color: rgb(0, 0, 0);
+}
+
+.form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+    width: 300px;
+    height: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    color: black;
+}
+
+.form_title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.container_button {
+    margin-bottom: 30px;
+}
+
+.button_add_group {
+    padding: 10px 20px;
+    background-color: blue;
+    color: rgb(141, 141, 141);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.button_add_group:hover {
+    color: white;
+}
+
+.button_add_group:active {
+    background-color: black;
+}

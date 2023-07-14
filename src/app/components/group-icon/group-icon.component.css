@@ -1,0 +1,23 @@
+.wrap {
+    margin-right: 30px;
+    word-wrap: break-word;
+    width: 100px;
+    height: auto;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+}
+
+.img_folder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block:hover {
+    border: 1px solid rgba(168, 168, 168, 0.164);
+    box-sizing: border-box;
+    opacity: 0.9;
+}
